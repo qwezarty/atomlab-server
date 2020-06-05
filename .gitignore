@@ -17,4 +17,5 @@
 # Vim editor and MacOS
 *.swp
 .DS_Store
+atomsrv
 
