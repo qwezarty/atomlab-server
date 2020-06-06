@@ -16,7 +16,7 @@ func main() {
 
 	// register all sub-routes
 	apps.Configure(db)
-	forms.Configure(router, db) // singleton, pass by pointer
+	forms.Configure(router) // singleton, pass by pointer
 
 	log.Fatal(router.Run("0.0.0.0:30096"))
 }
