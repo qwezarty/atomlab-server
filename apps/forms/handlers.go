@@ -38,6 +38,5 @@ func TitanicHandler(c *gin.Context) {
 		return
 	}
 
-	// c.JSON(http.StatusOK, gin.H{"ok": propability})
-	c.String(http.StatusOK, fmt.Sprintf("%.2f", propability*100))
+	c.JSON(http.StatusOK, gin.H{"propability": fmt.Sprintf("%.2f", propability*100)})
 }

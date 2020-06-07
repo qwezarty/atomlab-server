@@ -18,4 +18,4 @@
 *.swp
 .DS_Store
 atomsrv
-
+__debug_bin

@@ -15,7 +15,7 @@ go test . 1>/dev/null
 if [ -z $(docker images -q builds/$name) ]; then
 	echo -e "\033[1m==> Satisfying build enviroment...\033[0m"
 	cd $project
-	docker build -t builds/$name -f ./cli/Dockerfile . 1>/dev/null
+	docker build -t builds/$name -f ./cli/Dockerfile . 
 	[[ $? != "0" ]] && { echo "  --> Exiting with docker build error..."; exit 1; }
 fi
 
